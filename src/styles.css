@@ -1,0 +1,63 @@
+body {
+    background: radial-gradient(circle, #ff9a9e, #fad0c4, #ffefd5); /* Radial gradient */
+    background-size: cover; 
+    background-position: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  
+  .app-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .current-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .current-image img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  
+/* Add hover and click animations */
+/* Updated button style */
+/* Add this to your .next-button class */
+.next-button {
+    background-color: #ff9900;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: fixed; /* Fixed position */
+    top: 50%; /* Vertically center the button */
+    right: 20px; /* Distance from the right edge */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    z-index: 10; /* Ensures the button stays above other content */
+  }
+  
+  .next-button:hover {
+    background-color: #cc7700;
+    transform: scale(1.1) translateX(5px);  /* Grows and moves right */
+  }
+  
+  .next-button:active {
+    transform: scale(0.95) rotate(-5deg);  /* Shrinks and rotates */
+  }
+  
+  

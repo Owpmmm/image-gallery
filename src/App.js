@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import NextButton from "./components/NextButton";
+import "./styles.css";
 
-function App() {
+const App = () => {
+  const imagePaths = Array.from({ length: 15 }, (_, i) => `/images/happy_image_${i + 1}.jpg`);
+
+  // State for shuffled images and current index
+  const [shuffledImages, setShuffledImages] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Shuffle images when the app loads
+  useEffect(() => {
+    shuffleImages();
+  }, []);
+
+  // Function to shuffle images
+  const shuffleImages = () => {
+    const shuffled = [...imagePaths].sort(() => Math.random() - 0.5);
+    setShuffledImages(shuffled);
+    setCurrentIndex(0); // Reset to the first image
+  };
+
+  // Function to show the next image (in shuffled order)
+  const showNextImage = () => {
+    setCurrentIndex((prevIndex) => {
+      const nextIndex = (prevIndex + 1) % shuffledImages.length;
+      return nextIndex;
+    });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h1>🎉⭐Brighten Your Day⭐🎉</h1>
+
+      {/* Display only one image at a time */}
+      {shuffledImages.length > 0 && (
+        <div className="current-image">
+          <img src={shuffledImages[currentIndex]} alt="Happy" />
+        </div>
+      )}
+
+      <NextButton onClick={showNextImage} />
     </div>
   );
-}
+};
 
 export default App;
