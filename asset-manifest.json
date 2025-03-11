@@ -1,13 +1,28 @@
 {
   "files": {
     "main.css": "/image-gallery/static/css/main.c30c4d0d.css",
-    "main.js": "/image-gallery/static/js/main.5f542271.js",
+    "main.js": "/image-gallery/static/js/main.b629f942.js",
+    "static/media/happy_image_4.jpg": "/image-gallery/static/media/happy_image_4.38eccc66fe492a8373e0.jpg",
+    "static/media/happy_image_1.jpg": "/image-gallery/static/media/happy_image_1.46f08ea0693223873115.jpg",
+    "static/media/happy_image_7.jpg": "/image-gallery/static/media/happy_image_7.f58ac10f716b6d120ca1.jpg",
+    "static/media/happy_image_2.jpg": "/image-gallery/static/media/happy_image_2.9105e116e27acf92b1c2.jpg",
+    "static/media/happy_image_3.jpg": "/image-gallery/static/media/happy_image_3.6beb89a93d5a536c3c01.jpg",
+    "static/media/happy_image_6.jpg": "/image-gallery/static/media/happy_image_6.9da29bfa2dd9235778a0.jpg",
+    "static/media/happy_image_5.jpg": "/image-gallery/static/media/happy_image_5.b11c5843b3d4a8522c92.jpg",
+    "static/media/happy_image_14.jpg": "/image-gallery/static/media/happy_image_14.7770382d708e1d56944a.jpg",
+    "static/media/happy_image_10.jpg": "/image-gallery/static/media/happy_image_10.3b7b288622921dda436d.jpg",
+    "static/media/happy_image_11.jpg": "/image-gallery/static/media/happy_image_11.c9cb1c16f13113ae9059.jpg",
+    "static/media/happy_image_9.jpg": "/image-gallery/static/media/happy_image_9.471e29a1cf6868e0450f.jpg",
+    "static/media/happy_image_12.jpg": "/image-gallery/static/media/happy_image_12.51cceef9cdceecb0e302.jpg",
+    "static/media/happy_image_13.jpg": "/image-gallery/static/media/happy_image_13.f4e5f254eb4b895809cf.jpg",
+    "static/media/happy_image_8.jpg": "/image-gallery/static/media/happy_image_8.832f80c442f2f754505e.jpg",
+    "static/media/happy_image_15.jpg": "/image-gallery/static/media/happy_image_15.ddeecb8ced0baabb0e26.jpg",
     "index.html": "/image-gallery/index.html",
     "main.c30c4d0d.css.map": "/image-gallery/static/css/main.c30c4d0d.css.map",
-    "main.5f542271.js.map": "/image-gallery/static/js/main.5f542271.js.map"
+    "main.b629f942.js.map": "/image-gallery/static/js/main.b629f942.js.map"
   },
   "entrypoints": [
     "static/css/main.c30c4d0d.css",
-    "static/js/main.5f542271.js"
+    "static/js/main.b629f942.js"
   ]
 }
