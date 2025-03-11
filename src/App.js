@@ -3,7 +3,10 @@ import NextButton from "./components/NextButton";
 import "./styles.css";
 
 const App = () => {
-  const imagePaths = Array.from({ length: 15 }, (_, i) => `/images/happy_image_${i + 1}.jpg`);
+  // Dynamically require images from the src folder
+  const imagePaths = Array.from({ length: 15 }, (_, i) =>
+    require(`./images/happy_image_${i + 1}.jpg`)
+  );
 
   // State for shuffled images and current index
   const [shuffledImages, setShuffledImages] = useState([]);
@@ -23,16 +26,12 @@ const App = () => {
 
   // Function to show the next image (in shuffled order)
   const showNextImage = () => {
-    setCurrentIndex((prevIndex) => {
-      const nextIndex = (prevIndex + 1) % shuffledImages.length;
-      return nextIndex;
-    });
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % shuffledImages.length);
   };
 
   return (
     <div className="app-container">
       <h1>🎉⭐Brighten Your Day⭐🎉</h1>
-
       {/* Display only one image at a time */}
       {shuffledImages.length > 0 && (
         <div className="current-image">
